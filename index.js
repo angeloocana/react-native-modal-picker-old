@@ -4,13 +4,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
     View,
-    StyleSheet,
-    Dimensions,
+    ViewStylePropTypes,
     Modal,
     Text,
+    TextStylePropTypes,
     ScrollView,
     TouchableOpacity,
-    Platform
 } from 'react-native';
 
 import styles from './style';
@@ -22,15 +21,15 @@ const propTypes = {
     data: PropTypes.array,
     onChange: PropTypes.func,
     initValue: PropTypes.string,
-    style: View.propTypes.style,
-    selectStyle: View.propTypes.style,
-    optionStyle: View.propTypes.style,
-    optionTextStyle: Text.propTypes.style,
-    sectionStyle: View.propTypes.style,
-    sectionTextStyle: Text.propTypes.style,
-    cancelStyle: View.propTypes.style,
-    cancelTextStyle: Text.propTypes.style,
-    overlayStyle: View.propTypes.style,
+    style: ViewStylePropTypes,
+    selectStyle: ViewStylePropTypes,
+    optionStyle: ViewStylePropTypes,
+    optionTextStyle: TextStylePropTypes,
+    sectionStyle: ViewStylePropTypes,
+    sectionTextStyle: TextStylePropTypes,
+    cancelStyle: ViewStylePropTypes,
+    cancelTextStyle: TextStylePropTypes,
+    overlayStyle: ViewStylePropTypes,
     cancelText: PropTypes.string
 };
 
